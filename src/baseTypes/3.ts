@@ -1,6 +1,6 @@
-let some:any;
+let some:unknown;
 some = 'Text';
 let str: string;
-str = some;
+str = typeof some;
 
 export {};

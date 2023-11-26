@@ -1,12 +1,17 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+type PageDetails = {
+  createAt: Date;
+  updateAt: Date;
+};
+
 type Pages = {
   title: string;
   likes: number;
   accounts: string[];
   status: string;
-  details?: any;
+  details?: PageDetails;
 }
 
 const page1:Pages = {
